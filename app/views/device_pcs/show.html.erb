@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @device_pc.brand %>
+</p>
+
+<p>
+  <strong>Cpu:</strong>
+  <%= @device_pc.cpu %>
+</p>
+
+<%= link_to 'Edit', edit_device_pc_path(@device_pc) %> |
+<%= link_to 'Back', device_pcs_path %>

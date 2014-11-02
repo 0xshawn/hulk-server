@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  cpu: MyString
+  ram: MyString
+  disk: MyString
+  graphics: MyString
+
+two:
+  brand: MyString
+  cpu: MyString
+  ram: MyString
+  disk: MyString
+  graphics: MyString

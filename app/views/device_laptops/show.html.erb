@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @device_laptop.brand %>
+</p>
+
+<p>
+  <strong>Cpu:</strong>
+  <%= @device_laptop.cpu %>
+</p>
+
+<p>
+  <strong>Ram:</strong>
+  <%= @device_laptop.ram %>
+</p>
+
+<p>
+  <strong>Disk:</strong>
+  <%= @device_laptop.disk %>
+</p>
+
+<p>
+  <strong>Graphics:</strong>
+  <%= @device_laptop.graphics %>
+</p>
+
+<%= link_to 'Edit', edit_device_laptop_path(@device_laptop) %> |
+<%= link_to 'Back', device_laptops_path %>

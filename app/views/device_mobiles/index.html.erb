@@ -1,0 +1,27 @@
+<h1>Listing device_mobiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Model</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @device_mobiles.each do |device_mobile| %>
+      <tr>
+        <td><%= device_mobile.platform %></td>
+        <td><%= device_mobile.model %></td>
+        <td><%= link_to 'Show', device_mobile %></td>
+        <td><%= link_to 'Edit', edit_device_mobile_path(device_mobile) %></td>
+        <td><%= link_to 'Destroy', device_mobile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Device mobile', new_device_mobile_path %>

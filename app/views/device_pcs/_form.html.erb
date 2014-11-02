@@ -1,0 +1,25 @@
+<%= form_for(@device_pc) do |f| %>
+  <% if @device_pc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@device_pc.errors.count, "error") %> prohibited this device_pc from being saved:</h2>
+
+      <ul>
+      <% @device_pc.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu %><br>
+    <%= f.text_field :cpu %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

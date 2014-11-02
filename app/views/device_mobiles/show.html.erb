@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Platform:</strong>
+  <%= @device_mobile.platform %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @device_mobile.model %>
+</p>
+
+<%= link_to 'Edit', edit_device_mobile_path(@device_mobile) %> |
+<%= link_to 'Back', device_mobiles_path %>

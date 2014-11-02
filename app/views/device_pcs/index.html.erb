@@ -1,0 +1,27 @@
+<h1>Listing device_pcs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Brand</th>
+      <th>Cpu</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @device_pcs.each do |device_pc| %>
+      <tr>
+        <td><%= device_pc.brand %></td>
+        <td><%= device_pc.cpu %></td>
+        <td><%= link_to 'Show', device_pc %></td>
+        <td><%= link_to 'Edit', edit_device_pc_path(device_pc) %></td>
+        <td><%= link_to 'Destroy', device_pc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Device pc', new_device_pc_path %>

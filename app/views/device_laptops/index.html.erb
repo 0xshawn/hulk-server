@@ -1,0 +1,33 @@
+<h1>Listing device_laptops</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Brand</th>
+      <th>Cpu</th>
+      <th>Ram</th>
+      <th>Disk</th>
+      <th>Graphics</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @device_laptops.each do |device_laptop| %>
+      <tr>
+        <td><%= device_laptop.brand %></td>
+        <td><%= device_laptop.cpu %></td>
+        <td><%= device_laptop.ram %></td>
+        <td><%= device_laptop.disk %></td>
+        <td><%= device_laptop.graphics %></td>
+        <td><%= link_to 'Show', device_laptop %></td>
+        <td><%= link_to 'Edit', edit_device_laptop_path(device_laptop) %></td>
+        <td><%= link_to 'Destroy', device_laptop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Device laptop', new_device_laptop_path %>
