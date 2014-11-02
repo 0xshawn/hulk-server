@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  root 'pages#home'
+
+  resources :pages
   resources :device_mobiles
 
   resources :device_laptops
