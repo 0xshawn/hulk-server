@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141101191403) do
+ActiveRecord::Schema.define(version: 20141118152039) do
 
   create_table "device_laptops", force: true do |t|
     t.string   "brand"
@@ -40,6 +40,17 @@ ActiveRecord::Schema.define(version: 20141101191403) do
   create_table "devices", force: true do |t|
     t.string   "type"
     t.integer  "type_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "hosts", force: true do |t|
+    t.string   "hostname"
+    t.string   "description"
+    t.string   "ip"
+    t.string   "cpu"
+    t.string   "mem"
+    t.string   "storage"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

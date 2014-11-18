@@ -1,16 +1,14 @@
 Rails.application.routes.draw do
 
+
   root 'pages#home'
 
+  resources :hosts
   resources :pages
   resources :device_mobiles
-
   resources :device_laptops
-
   resources :device_pcs
-
   resources :devices
-
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
